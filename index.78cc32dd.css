@@ -1,0 +1,137 @@
+body {
+  justify-content: stretch;
+  align-items: stretch;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+#info {
+  text-align: center;
+  z-index: 100;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 10px;
+}
+
+canvas, div {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.concert-one-regular {
+  font-family: Concert One, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.ui-card {
+  color: #fff;
+  background-color: #fff;
+  border: 4px solid #2f373f;
+  border-radius: 8px;
+  width: 350px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  box-shadow: 0 0 #0000004d;
+}
+
+.ui-header {
+  color: #465cbb;
+  background-color: #fff;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  font-family: Concert One, serif;
+  font-size: 32px;
+  font-weight: bolder;
+  display: flex;
+  position: relative;
+}
+
+.ui-header:after {
+  content: "";
+  background-color: #465cbb;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+
+.ui-content {
+  text-align: justify;
+  color: #fff;
+  background-color: #465cbb;
+  border-radius: 5px;
+  height: 320px;
+  margin-top: 5px;
+  padding: 10px;
+  font-family: Concert One, serif;
+  font-size: 20px;
+  overflow-y: scroll;
+}
+
+.ui-content::-webkit-scrollbar {
+  width: 12px;
+}
+
+.ui-content::-webkit-scrollbar-track {
+  background: #0000004d;
+  border-radius: 6px;
+  margin: 5px;
+}
+
+.ui-content::-webkit-scrollbar-thumb {
+  background: linear-gradient(#666, #444);
+  border: 2px solid #0000004d;
+  border-radius: 6px;
+}
+
+.ui-content::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#777, #555);
+}
+
+.ui-content {
+  scrollbar-width: thin;
+  scrollbar-color: #666 #0000004d;
+}
+
+.ui-button {
+  background-color: #fff;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px;
+  display: flex;
+}
+
+.ui-button span {
+  font-weight: bold;
+}
+
+.ui-button button {
+  color: #fff;
+  background-color: #465cbb;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: fit-content;
+  padding: 5px;
+  font-family: Concert One, serif;
+  font-size: 20px;
+  transition: background-color .5s, transform .2s;
+}
+
+.ui-button button:hover {
+  background-color: #6d88ff;
+  transform: scale(1.02);
+}
+/*# sourceMappingURL=index.78cc32dd.css.map */

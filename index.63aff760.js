@@ -695,7 +695,7 @@ function createVehicle(pathPoints, maxSpeed = 6) {
     entityManager.add(vehicle);
     vehicles.push(vehicle);
     // Muat model dan tambahkan ke scene
-    loader.load("../../public/assets/car.glb", function(gltf) {
+    loader.load("./public/assets/car.glb", function(gltf) {
         const model = gltf.scene.clone();
         model.matrixAutoUpdate = false;
         scene.add(model);
@@ -730,7 +730,7 @@ function createVehicle2(pathPoints, maxSpeed = 6) {
         }
     }
     // Muat model dan tambahkan ke scene
-    loader.load("../../public/assets/train.glb", function(gltf) {
+    loader.load("./public/assets/train.glb", function(gltf) {
         const model = gltf.scene.clone();
         model.matrixAutoUpdate = false;
         model.rotation.y = Math.PI / 2;
@@ -758,7 +758,7 @@ function createVehicle3(pathPoints, maxSpeed = 8) {
     entityManager.add(vehicle);
     vehicles.push(vehicle);
     // Muat model dan tambahkan ke scene
-    loader.load("../../public/assets/drone.glb", function(gltf) {
+    loader.load("./public/assets/drone.glb", function(gltf) {
         const model = gltf.scene.clone();
         model.matrixAutoUpdate = false;
         model.rotation.y = Math.PI / 2;
@@ -47033,7 +47033,7 @@ var _gltfloaderJs = require("three/examples/jsm/loaders/GLTFLoader.js");
 function loadBuilding(scene) {
     const loader = new (0, _gltfloaderJs.GLTFLoader)();
     // ================== apartment =================
-    loader.load("../../public/assets/apartment.glb", function(gltf) {
+    loader.load("./public/assets/apartment.glb", function(gltf) {
         const apartment = gltf.scene;
         scene.add(apartment);
         apartment.scale.set(3, 3, 3);
@@ -47042,7 +47042,7 @@ function loadBuilding(scene) {
     }, undefined, function(error) {
         console.error(error);
     });
-    loader.load("../../public/assets/apartment.glb", function(gltf) {
+    loader.load("./public/assets/apartment.glb", function(gltf) {
         const apartment = gltf.scene;
         scene.add(apartment);
         apartment.scale.set(3, 3, 3);
@@ -47051,7 +47051,7 @@ function loadBuilding(scene) {
     }, undefined, function(error) {
         console.error(error);
     });
-    loader.load("../../public/assets/apartment.glb", function(gltf) {
+    loader.load("./public/assets/apartment.glb", function(gltf) {
         const apartment = gltf.scene;
         scene.add(apartment);
         apartment.scale.set(3, 3, 3);
@@ -47060,7 +47060,7 @@ function loadBuilding(scene) {
     }, undefined, function(error) {
         console.error(error);
     });
-    loader.load("../../public/assets/apartment.glb", function(gltf) {
+    loader.load("./public/assets/apartment.glb", function(gltf) {
         const apartment = gltf.scene;
         scene.add(apartment);
         apartment.scale.set(3, 3, 3);
@@ -47070,7 +47070,7 @@ function loadBuilding(scene) {
         console.error(error);
     });
     // ================== apartment bulat =================
-    loader.load("../../public/assets/apartment2.glb", function(gltf) {
+    loader.load("./public/assets/apartment2.glb", function(gltf) {
         const apartment2 = gltf.scene;
         scene.add(apartment2);
         apartment2.scale.set(4, 4, 4);
@@ -47088,7 +47088,7 @@ function loadBuilding(scene) {
     }, undefined, function(error) {
         console.error(error);
     });
-    loader.load("../../public/assets/apartment2.glb", function(gltf) {
+    loader.load("./public/assets/apartment2.glb", function(gltf) {
         const apartment2 = gltf.scene;
         scene.add(apartment2);
         apartment2.scale.set(4, 4, 4);
@@ -47097,7 +47097,7 @@ function loadBuilding(scene) {
     }, undefined, function(error) {
         console.error(error);
     });
-    loader.load("../../public/assets/apartment2.glb", function(gltf) {
+    loader.load("./public/assets/apartment2.glb", function(gltf) {
         const apartment2 = gltf.scene;
         scene.add(apartment2);
         apartment2.scale.set(4, 4, 4);
@@ -47107,7 +47107,7 @@ function loadBuilding(scene) {
         console.error(error);
     });
     // ================== hospital =================
-    loader.load("../../public/assets/hospital.glb", function(gltf) {
+    loader.load("./public/assets/hospital.glb", function(gltf) {
         const hospital = gltf.scene;
         scene.add(hospital);
         hospital.scale.set(4, 4, 4);
@@ -47117,7 +47117,7 @@ function loadBuilding(scene) {
         console.error(error);
     });
     // ================== university =================
-    loader.load("../../public/assets/university.glb", function(gltf) {
+    loader.load("./public/assets/university.glb", function(gltf) {
         const university = gltf.scene;
         scene.add(university);
         university.scale.set(3, 3, 3);
@@ -47128,7 +47128,7 @@ function loadBuilding(scene) {
     });
     // ================== car =================
     // ================== taman =================
-    loader.load("../../public/assets/taman.glb", function(gltf) {
+    loader.load("./public/assets/taman.glb", function(gltf) {
         const taman = gltf.scene;
         scene.add(taman);
         taman.scale.set(1.5, 1.5, 1.5);
@@ -47138,7 +47138,7 @@ function loadBuilding(scene) {
         console.error(error);
     });
     // ================== tower-iot =================
-    loader.load("../../public/assets/tower-iot.glb", function(gltf) {
+    loader.load("./public/assets/tower-iot.glb", function(gltf) {
         const taman = gltf.scene;
         scene.add(taman);
         taman.scale.set(10, 10, 10);
@@ -47148,7 +47148,7 @@ function loadBuilding(scene) {
         console.error(error);
     });
     // ================== Rumah =================
-    loader.load("../../public/assets/rumah.glb", function(gltf) {
+    loader.load("./public/assets/rumah.glb", function(gltf) {
         const rumah = gltf.scene;
         scene.add(rumah);
         rumah.scale.set(7, 7, 7);
@@ -47157,7 +47157,7 @@ function loadBuilding(scene) {
     }, undefined, function(error) {
         console.error(error);
     });
-    loader.load("../../public/assets/rumah.glb", function(gltf) {
+    loader.load("./public/assets/rumah.glb", function(gltf) {
         const rumah = gltf.scene;
         scene.add(rumah);
         rumah.scale.set(7, 7, 7);
@@ -47166,7 +47166,7 @@ function loadBuilding(scene) {
     }, undefined, function(error) {
         console.error(error);
     });
-    loader.load("../../public/assets/rumah.glb", function(gltf) {
+    loader.load("./public/assets/rumah.glb", function(gltf) {
         const rumah = gltf.scene;
         scene.add(rumah);
         rumah.scale.set(7, 7, 7);
@@ -47175,7 +47175,7 @@ function loadBuilding(scene) {
     }, undefined, function(error) {
         console.error(error);
     });
-    loader.load("../../public/assets/rumah.glb", function(gltf) {
+    loader.load("./public/assets/rumah.glb", function(gltf) {
         const rumah = gltf.scene;
         scene.add(rumah);
         rumah.scale.set(7, 7, 7);
@@ -47184,7 +47184,7 @@ function loadBuilding(scene) {
     }, undefined, function(error) {
         console.error(error);
     });
-    loader.load("../../public/assets/rumah.glb", function(gltf) {
+    loader.load("./public/assets/rumah.glb", function(gltf) {
         const rumah = gltf.scene;
         scene.add(rumah);
         rumah.scale.set(7, 7, 7);
@@ -47193,7 +47193,7 @@ function loadBuilding(scene) {
     }, undefined, function(error) {
         console.error(error);
     });
-    loader.load("../../public/assets/rumah.glb", function(gltf) {
+    loader.load("./public/assets/rumah.glb", function(gltf) {
         const rumah = gltf.scene;
         scene.add(rumah);
         rumah.scale.set(7, 7, 7);
@@ -47203,7 +47203,7 @@ function loadBuilding(scene) {
         console.error(error);
     });
     // ================== Power Plant =============
-    loader.load("../../public/assets/powerplant.glb", function(gltf) {
+    loader.load("./public/assets/powerplant.glb", function(gltf) {
         const powerplant = gltf.scene;
         scene.add(powerplant);
         powerplant.scale.set(1.3, 3, 1.3);
@@ -47213,7 +47213,7 @@ function loadBuilding(scene) {
         console.error(error);
     });
     // ================== station =================
-    loader.load("../../public/assets/station.glb", function(gltf) {
+    loader.load("./public/assets/station.glb", function(gltf) {
         const station = gltf.scene;
         scene.add(station);
         station.scale.set(1.05, 2.05, 1.05);
@@ -47224,7 +47224,7 @@ function loadBuilding(scene) {
     });
     // ================== pohon =====================
     // ================ jalan ============
-    loader.load("../../public/assets/jalan.glb", function(gltf) {
+    loader.load("./public/assets/jalan.glb", function(gltf) {
         const jalan = gltf.scene;
         scene.add(jalan);
         jalan.scale.set(1, 1, 1);
@@ -47234,7 +47234,7 @@ function loadBuilding(scene) {
         console.error(error);
     });
     // ================== Lampu =====================
-    loader.load("../../public/assets/lampu.glb", function(gltf) {
+    loader.load("./public/assets/lampu.glb", function(gltf) {
         const lampu = gltf.scene;
         scene.add(lampu);
         lampu.scale.set(5, 5, 5);
